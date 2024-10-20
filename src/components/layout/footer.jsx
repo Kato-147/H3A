@@ -27,7 +27,7 @@ export default function Footer() {
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Mail className="h-5 w-5" />
-                                <span>contact@company.com</span>
+                                <span>H3a.education.company@gmail.com</span>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export default function Footer() {
             </ul>
           </div> */}
 
-{/* iframe gg map */}
+                    {/* iframe gg map */}
                     <div className="w-full md:w-1/2">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3644893759147!2d106.61963867483117!3d10.783370689365846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c04ba2ac207%3A0xe0f0156167daf751!2zMjUwIMSQLiBMw6ogU2FvLCBQaMO6IFRo4bqhbmgsIFTDom4gUGjDuiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1729352539745!5m2!1svi!2s"
@@ -55,7 +55,6 @@ export default function Footer() {
                         //   loading="lazy"
                         ></iframe>
                     </div>
-
 
                 </div>
 
@@ -71,11 +70,11 @@ export default function Footer() {
                             </svg>
                         </a> */}
 
-<a href="https://www.gimcheon.ac.kr/site/gimcheon/" target="_blank"
-    rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
-              <span className="sr-only">Web</span>
-              <Cloud className="h-6 w-6" />
-            </a>
+                        <a href="https://www.gimcheon.ac.kr/site/gimcheon/" target="_blank"
+                            rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
+                            <span className="sr-only">Web</span>
+                            <Cloud className="h-6 w-6" />
+                        </a>
 
                         {/* Instagram icon */}
                         {/* <a href="#" className="text-gray-400 hover:text-gray-500">
@@ -87,7 +86,7 @@ export default function Footer() {
 
                         {/* Twitter icon */}
                         <a href="https://www.youtube.com/@ik4050a" target="_blank"
-    rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
+                            rel="noopener noreferrer" className="text-gray-400 hover:text-gray-500">
                             <span className="sr-only">Youtube</span>
                             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fillRule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clipRule="evenodd" />

@@ -3,6 +3,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import React from 'react'
 import img1 from '../assets/img1.png';
+import logo from '../assets/logo.png';
 import Footer from "@/components/layout/footer";
 
 const Home = () => {
@@ -10,14 +11,18 @@ const Home = () => {
     <div className="flex flex-col min-h-dvh  ">
 
       {/* header */}
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+      <header className="px-4 lg:px-6 h-14 flex items-center bg-gradient-to-r from-green-500 to-blue-400">
         <a href="#" className="flex items-center justify-center" prefetch={false}>
-          <MountainIcon className="size-6" />
-          <span className="sr-only">Acme Consulting</span>
+          <div className="flex items-center gap-3">
+          <img src={logo} className="w-13 h-10"/>
+          <p className="text-xl font-bold text-white">H3A EDUCATION</p>
+          </div>
+          
+          <span className="sr-only">H3A</span>
         </a>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <a href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Liên hệ
+            <p className="text-white">Liên hệ</p>
           </a>
         </nav>
       </header>
@@ -69,7 +74,7 @@ const Home = () => {
             <div className="flex flex-col items-center justify-center space-y-4 text-center ">
               <div className="space-y-2  ">
                 <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm ">H3A company</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl ">Dịch của chúng tôi </h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl ">Dịch vụ của chúng tôi </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Lĩnh vực hoạt động chuyên nghiệp tích luỹ qua nhiều năm kinh nghiệm.
                 </p>
