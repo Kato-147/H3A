@@ -4,6 +4,8 @@ import { Moon, Sun } from "lucide-react";
 
 export const ToggleTheme = () => {
   const { theme, setTheme } = useTheme();
+  console.log(theme);
+  
   return (
     <Button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}

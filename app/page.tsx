@@ -12,13 +12,13 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Shadcn - Landing template",
-  description: "Free Shadcn landing page for developers",
+  title: "H3A EDUCATION",
+  description: "Tư vấn du học Hàn Quốc",
   openGraph: {
     type: "website",
     url: "https://github.com/nobruf/shadcn-landing-page.git",
     title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    description: "Tư vấn du học Hàn Quốc",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
@@ -42,14 +42,27 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+    
       <HeroSection />
-      <SponsorsSection />
+
+      {/* slide show nhà tài trợ */}
+      {/* <SponsorsSection />  */}
       <BenefitsSection />
+
+      {/* gimcheon */}
       <FeaturesSection />
+
+      {/* dịch vụ */}
       <ServicesSection />
+
+      {/* Ngành học */}
       <TestimonialSection />
+
+      {/* Học bổng */}
       <TeamSection />
-      <CommunitySection />
+      {/* <CommunitySection /> */}
+
+      {/* Phí dịch vụ */}
       <PricingSection />
       <ContactSection />
       <FAQSection />

@@ -14,6 +14,22 @@ const nextConfig = {
         protocol: "https",
         hostname: "github.com",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.didongmy.com",
+      },
+      {
+        protocol: "https",
+        hostname: "ibhak.gimcheon.ac.kr",
+      },
+      {
+        protocol: "https",
+        hostname: "socwel.gimcheon.ac.kr",
+      },
     ],
   },
 };

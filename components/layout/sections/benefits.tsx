@@ -11,27 +11,27 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "Build Brand Trust",
+    title: "Nâng cao trình độ học vấn",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Du học Hàn Quốc giúp bạn tiếp cận nền giáo dục chất lượng cao, trang bị kiến thức chuyên môn và kỹ năng thực hành.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Mở rộng cơ hội nghề nghiệp",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Hàn Quốc là một thị trường việc làm sôi động, với nhiều cơ hội cho người nước ngoài.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "Mở rộng tầm nhìn",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      " Du học giúp bạn khám phá văn hóa Hàn Quốc, giao lưu với bạn bè quốc tế và trở nên tự tin hơn.",
   },
   {
     icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    title: "Cải thiện kỹ năng sống",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Bạn sẽ học cách tự lập, thích nghi với môi trường mới và giải quyết các vấn đề một cách hiệu quả.",
   },
 ];
 
@@ -40,15 +40,13 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">Lợi ích</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Sau chương trình du học
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Những lợi ích sau khi bạn hoàng thành chương trình du học tại Hàn Quốc.
           </p>
         </div>
 

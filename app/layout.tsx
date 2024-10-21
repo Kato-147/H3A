@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
+  title: "H3A EDUCATION",
+  description: "Tư vấn du học Hàn Quốc",
 };
 
 export default function RootLayout({
@@ -18,6 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
+      <head>
+        {/* Thêm favicon tại đây */}
+        <link rel="icon" href="/new-favicon.ico" sizes="any" />
+      </head>
       <body className={cn("min-h-screen bg-background", inter.className)}>
         <ThemeProvider
           attribute="class"

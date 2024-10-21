@@ -11,39 +11,39 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    title: "Chất lượng",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Nằm trong hệ thống giáo dục chất lượng quốc tế của Hàn Quốc.",
   },
   {
     icon: "BadgeCheck",
-    title: "Social Proof",
+    title: "Bằng cấp",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Bằng cấp được công nhận trên toàn thế giới.",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
+    title: "Giao lưu",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Cơ hội giao lưu văn hóa quốc tế với các sinh viên đến từ 100 trường Đại Học của hơn 30 quốc gia trên toàn thế giới.",
   },
   {
     icon: "PictureInPicture",
-    title: "Strong Visuals",
+    title: "Môi trường",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Môi trường học tập an toàn và chất lượng.",
   },
   {
     icon: "MousePointerClick",
-    title: "Clear CTA",
+    title: "Rèn luyện",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Sinh viên được quan tâm chăm sóc. Có môi trường để sinh viên rèn luyện tinh thần vượt qua khó khăn thử thách để đi đến thành công.",
   },
   {
     icon: "Newspaper",
-    title: "Clear Headline",
+    title: "Cơ hội",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Cơ hội làm việc cao sau khi tốt nghiệp.",
   },
 ];
 
@@ -51,17 +51,15 @@ export const FeaturesSection = () => {
   return (
     <section id="features" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+        Gimcheon
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Đại học Gimcheon
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Được học tại trường Đại Học Gimcheon tại Hàn Quốc.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
