@@ -78,6 +78,7 @@ export const Navbar = () => {
         <Image alt="" src={require('@/public/logo.png')} className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center" />
         H3A EDUCATION
       </Link>
+      
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
