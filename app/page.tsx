@@ -63,9 +63,9 @@ export default function Home() {
       {/* <CommunitySection /> */}
 
       {/* Phí dịch vụ */}
-      <PricingSection />
+      {/* <PricingSection />
       <ContactSection />
-      <FAQSection />
+      <FAQSection /> */}
       <FooterSection />
     </>
   );
