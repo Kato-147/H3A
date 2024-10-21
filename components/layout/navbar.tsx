@@ -37,20 +37,20 @@ interface FeatureProps {
 const routeList: RouteProps[] = [
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "Ngành học",
   },
-  {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
+  // {
+  //   href: "#team",
+  //   label: "Team",
+  // },
+  // {
+  //   href: "#contact",
+  //   label: "Contact",
+  // },
+  // {
+  //   href: "#faq",
+  //   label: "FAQ",
+  // },
 ];
 
 const featureList: FeatureProps[] = [
@@ -78,7 +78,7 @@ export const Navbar = () => {
         <Image alt="" src={require('@/public/logo.png')} className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center" />
         H3A EDUCATION
       </Link>
-      
+
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -131,9 +131,9 @@ export const Navbar = () => {
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
+            {/* <NavigationMenuTrigger className="bg-card text-base">
               Features
-            </NavigationMenuTrigger>
+            </NavigationMenuTrigger> */}
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                 <Image

@@ -59,7 +59,7 @@ export default function Home() {
       <TestimonialSection />
 
       {/* Học bổng */}
-      <TeamSection />
+      {/* <TeamSection /> */}
       {/* <CommunitySection /> */}
 
       {/* Phí dịch vụ */}
