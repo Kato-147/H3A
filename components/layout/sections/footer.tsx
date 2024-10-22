@@ -36,6 +36,12 @@ export const FooterSection = () => {
 
                 <div>
                   <Link href="#" className="opacity-60 hover:opacity-100">
+                    0989510100 
+                  </Link>
+                </div>
+
+                <div>
+                  <Link href="#" className="opacity-60 hover:opacity-100">
                     H3a.education.company@gmail.com
                   </Link>
                 </div>
@@ -52,13 +58,19 @@ export const FooterSection = () => {
               <div className="flex flex-col gap-2 flex-[1]">
                 <h3 className="font-bold text-lg">Liên kết</h3>
                 <div>
-                  <Link href="#" className="opacity-60 hover:opacity-100">
+                  <Link target="_blank" rel="noopener noreferrer" href="gimcheon.ac.kr" className="opacity-60 hover:opacity-100">
                     Đại học Gimcheon
                   </Link>
                 </div>
 
                 <div>
-                  <Link href="#" className="opacity-60 hover:opacity-100">
+                  <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/duhochanquoch3a" className="opacity-60 hover:opacity-100">
+                    Facebook
+                  </Link>
+                </div>
+
+                <div>
+                  <Link target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@ik4050a" className="opacity-60 hover:opacity-100">
                     Youtube
                   </Link>
                 </div>
@@ -81,6 +93,7 @@ export const FooterSection = () => {
           </div>
         </div>
 
+{/* copy right */}
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
