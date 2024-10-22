@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { ChevronsDownIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from '@/public/logo.png'
+import logo from "@/public/logo.png";
 
 export const FooterSection = () => {
   return (
@@ -36,7 +36,7 @@ export const FooterSection = () => {
 
                 <div>
                   <Link href="#" className="opacity-60 hover:opacity-100">
-                    0989510100 
+                    0989510100
                   </Link>
                 </div>
 
@@ -47,9 +47,14 @@ export const FooterSection = () => {
                 </div>
 
                 <div>
-                  <Link target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/gyxEpsysnCgp3Ddy9" className="opacity-60 hover:opacity-100">
-                    250 Lê Sao, phường Phú Thạnh, quận Tân Phú, thành phố Hồ Chí
-                    Minh
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://maps.app.goo.gl/6V31MDFBj6w7oRQBA"
+                    className="opacity-60 hover:opacity-100"
+                  >
+                    Số 44, đường số 12, phường Tăng Nhơn Phú B, thành phố Thủ
+                    Đức, TPHCM
                   </Link>
                 </div>
               </div>
@@ -58,19 +63,34 @@ export const FooterSection = () => {
               <div className="flex flex-col gap-2 flex-[1]">
                 <h3 className="font-bold text-lg">Liên kết</h3>
                 <div>
-                  <Link target="_blank" rel="noopener noreferrer" href="gimcheon.ac.kr" className="opacity-60 hover:opacity-100">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="gimcheon.ac.kr"
+                    className="opacity-60 hover:opacity-100"
+                  >
                     Đại học Gimcheon
                   </Link>
                 </div>
 
                 <div>
-                  <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/duhochanquoch3a" className="opacity-60 hover:opacity-100">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/duhochanquoch3a"
+                    className="opacity-60 hover:opacity-100"
+                  >
                     Facebook
                   </Link>
                 </div>
 
                 <div>
-                  <Link target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@ik4050a" className="opacity-60 hover:opacity-100">
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.youtube.com/@ik4050a"
+                    className="opacity-60 hover:opacity-100"
+                  >
                     Youtube
                   </Link>
                 </div>
@@ -82,9 +102,9 @@ export const FooterSection = () => {
 
           <div className="w-full md:w-1/2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3644893759147!2d106.61963867483117!3d10.783370689365846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c04ba2ac207%3A0xe0f0156167daf751!2zMjUwIMSQLiBMw6ogU2FvLCBQaMO6IFRo4bqhbmgsIFTDom4gUGjDuiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1729352539745!5m2!1svi!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6515798590463!2d106.77282497485785!3d10.837953289314575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527066b638b4d%3A0xbde8d28147f66ba4!2zNDQgxJDGsOG7nW5nIHPhu5EgMTIsIFTEg25nIE5oxqFuIFBow7ogQiwgUXXhuq1uIDksIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1729610239074!5m2!1svi!2s"
               width="100%"
-              height="200"
+              height="250"
               className="border-0"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
@@ -93,7 +113,7 @@ export const FooterSection = () => {
           </div>
         </div>
 
-{/* copy right */}
+        {/* copy right */}
         <Separator className="my-6" />
         <section className="">
           <h3 className="">
