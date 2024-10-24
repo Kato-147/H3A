@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { ChevronsDownIcon } from "lucide-react";
+import { ChevronsDownIcon, FacebookIcon, Mail, Map, Phone, School, YoutubeIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/public/logo.png";
@@ -28,25 +28,29 @@ export const FooterSection = () => {
               {/* Liên hệ */}
               <div className="flex flex-col gap-2">
                 <h3 className="font-bold text-lg">Liên hệ</h3>
-                <div>
-                  <Link href="#" className="opacity-60 hover:opacity-100">
+                <div className="flex items-center space-x-2">
+                <Phone className="h-5 w-5 opacity-60" />
+                  <Link href="#footer" className="opacity-60 hover:opacity-100">
                     0702681801
                   </Link>
                 </div>
 
-                <div>
-                  <Link href="#" className="opacity-60 hover:opacity-100">
+                <div className="flex items-center space-x-2">
+                <Phone className="h-5 w-5 opacity-60" />
+                  <Link href="#footer" className="opacity-60 hover:opacity-100">
                     0989510100
                   </Link>
                 </div>
 
-                <div>
-                  <Link href="#" className="opacity-60 hover:opacity-100">
+                <div className="flex items-center space-x-2">
+                <Mail className="h-5 w-5 opacity-60" />
+                  <Link href="#footer" className="opacity-60 hover:opacity-100">
                     H3a.education.company@gmail.com
                   </Link>
                 </div>
 
-                <div>
+                <div className="flex items-center space-x-2">
+                <Map className="h-5 w-5 opacity-60" />
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
@@ -62,7 +66,8 @@ export const FooterSection = () => {
               {/* Liên kết */}
               <div className="flex flex-col gap-2 flex-[1]">
                 <h3 className="font-bold text-lg">Liên kết</h3>
-                <div>
+                <div className="flex items-center space-x-2">
+                <School className="h-5 w-5 opacity-60" />
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
@@ -73,7 +78,8 @@ export const FooterSection = () => {
                   </Link>
                 </div>
 
-                <div>
+                <div className="flex items-center space-x-2">
+                <FacebookIcon className="h-5 w-5 opacity-60" />
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
@@ -84,7 +90,8 @@ export const FooterSection = () => {
                   </Link>
                 </div>
 
-                <div>
+                <div className="flex items-center space-x-2">
+                <YoutubeIcon className="h-5 w-5 opacity-60" />
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
