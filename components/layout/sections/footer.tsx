@@ -71,7 +71,7 @@ export const FooterSection = () => {
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="gimcheon.ac.kr"
+                    href="https://www.gimcheon.ac.kr/site/gimcheon/"
                     className="opacity-60 hover:opacity-100"
                   >
                     Đại học Gimcheon

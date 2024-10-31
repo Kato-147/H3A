@@ -1,0 +1,48 @@
+ const [isNganhHocOpen, setIsNganhHocOpen] = React.useState(false)
+
+  <NavigationMenu
+                orientation="vertical"
+                onValueChange={(value) => setIsNganhHocOpen(value === "nganh-hoc")}
+              >
+                <NavigationMenuList className="flex-col items-start">
+                  <NavigationMenuItem value="nganh-hoc" className="w-full">
+                    <NavigationMenuTrigger className="font-semibold text-lg mb-2 justify-start w-full">
+                      Ngành học
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="mt-2">
+                        <ul className="flex flex-col gap-2">
+                          {featureList.map(({ title, description }) => (
+                            <li
+                              key={title}
+                              className="rounded-md p-3 text-sm hover:bg-muted"
+                            >
+                              <p className="mb-1 font-semibold leading-none text-foreground">
+                                {title}
+                              </p>
+                              <p className="line-clamp-2 text-muted-foreground">
+                                {description}
+                              </p>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+
+              <div className={`flex flex-col mt-4 transition-all duration-300 ease-in-out ${isNganhHocOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+                {routeList.map(({ href, label }) => (
+                  <Button
+                    key={href}
+                    onClick={() => setIsOpen(false)}
+                    asChild
+                    variant="ghost"
+                    className="justify-start text-base"
+                  >
+                    <Link href={href}>{label}</Link>
+                  </Button>
+                ))}
+              </div>
+            </div>

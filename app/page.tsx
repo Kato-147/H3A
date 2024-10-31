@@ -9,30 +9,30 @@ import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
 import { TeamSection } from "@/components/layout/sections/team";
-import { TestimonialSection } from "@/components/layout/sections/testimonial";
+import { Major } from "@/components/layout/sections/major";
 
 export const metadata = {
   title: "H3A EDUCATION",
   description: "Tư vấn du học Hàn Quốc",
   openGraph: {
     type: "website",
-    url: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
+    url: "https://h3a.onrender.com/",
+    title: "H3A Education",
     description: "Tư vấn du học Hàn Quốc",
     images: [
       {
         url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
         width: 1200,
         height: 630,
-        alt: "Shadcn - Landing template",
+        alt: "H3A Education",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    site: "https://h3a.onrender.com/",
+    title: "H3A Education",
+    description: "Tư vấn du học Hàn Quốc",
     images: [
       "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
     ],
@@ -56,7 +56,7 @@ export default function Home() {
       <ServicesSection />
 
       {/* Ngành học */}
-      <TestimonialSection />
+      <Major />
 
       {/* Học bổng */}
       {/* <TeamSection /> */}

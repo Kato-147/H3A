@@ -10,8 +10,9 @@ interface ImageProps {
 
 const imagesList: ImageProps[] = [
   { image: "/img1.png" },
-  { image: "/img1.png" },
-  { image: "/img1.png" },
+  { image: "/hero_img4.jpg" },
+  { image: "/hero_img3.jpg" },
+  { image: "/hero_img2.jpg" },
 ];
 
 export const HeroSection = () => {

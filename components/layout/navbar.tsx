@@ -22,7 +22,8 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
-
+import navbar from "@/public/navbar-img.jpg";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 
 interface RouteProps {
   href: string;
@@ -32,6 +33,7 @@ interface RouteProps {
 interface FeatureProps {
   title: string;
   description: string;
+  href: string;
 }
 
 const routeList: RouteProps[] = [
@@ -40,7 +42,7 @@ const routeList: RouteProps[] = [
     label: "Dịch vụ",
   },
   {
-    href: "#testimonials",
+    href: "#major",
     label: "Ngành học",
   },
 
@@ -62,16 +64,19 @@ const featureList: FeatureProps[] = [
   {
     title: "Showcase Your Value ",
     description: "Highlight how your product solves user problems.",
+    href: "#",
   },
   {
     title: "Build Trust",
     description:
       "Leverages social proof elements to establish trust and credibility.",
+    href: "#",
   },
   {
     title: "Capture Leads",
     description:
       "Make your lead capture form visually appealing and strategically.",
+    href: "#",
   },
 ];
 
@@ -80,7 +85,11 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
-        <Image alt="" src={require('@/public/logo.png')} className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center" />
+        <Image
+          alt=""
+          src={require("@/public/logo.png")}
+          className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center"
+        />
         H3A EDUCATION
       </Link>
 
@@ -95,20 +104,47 @@ export const Navbar = () => {
           </SheetTrigger>
 
           <SheetContent
-            side="left"
-            className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
-          >
-            <div>
-              <SheetHeader className="mb-4 ml-4">
-                <SheetTitle className="flex items-center">
-                  <Link href="/" className="flex items-center">
-                  <Image alt="" src={require('@/public/logo.png')} className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center" />
-                  H3A EDUCATION
-                  </Link>
-                </SheetTitle>
-              </SheetHeader>
+  side="left"
+  className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+>
+  <div>
+    <SheetHeader className="mb-4 ml-4">
+      <SheetTitle className="flex items-center">
+        <Link href="/" className="flex items-center">
+          <Image
+            alt=""
+            src={require("@/public/logo.png")}
+            className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center"
+          />
+          H3A EDUCATION
+        </Link>
+      </SheetTitle>
+    </SheetHeader>
 
-              <div className="flex flex-col gap-2">
+    <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="nganh-hoc">
+                  <AccordionTrigger className="font-semibold text-lg">Ngành học</AccordionTrigger>
+                  <AccordionContent>
+                    <ul className="flex flex-col gap-2">
+                      {featureList.map(({ title, description }) => (
+                        <li
+                          key={title}
+                          className="rounded-md p-3 text-sm hover:bg-muted"
+                        >
+                          <p className="mb-1 font-semibold leading-none text-foreground">
+                            {title}
+                          </p>
+                          <p className="line-clamp-2 text-muted-foreground">
+                            {description}
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+
+              <div className="flex flex-col mt-4">
                 {routeList.map(({ href, label }) => (
                   <Button
                     key={href}
@@ -121,14 +157,14 @@ export const Navbar = () => {
                   </Button>
                 ))}
               </div>
-            </div>
+  </div>
 
-            <SheetFooter className="flex-col sm:flex-col justify-start items-start">
-              <Separator className="mb-2" />
+  <SheetFooter className="flex-col sm:flex-col justify-start items-start">
+    <Separator className="mb-2" />
+    <ToggleTheme />
+  </SheetFooter>
+</SheetContent>
 
-              <ToggleTheme />
-            </SheetFooter>
-          </SheetContent>
         </Sheet>
       </div>
 
@@ -136,13 +172,13 @@ export const Navbar = () => {
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
           <NavigationMenuItem>
-            {/* <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger> */}
+            <NavigationMenuTrigger className="bg-card text-base">
+              Ngành học
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                 <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
+                  src={navbar}
                   alt="RadixLogo"
                   className="h-full w-full rounded-md object-cover"
                   width={600}
