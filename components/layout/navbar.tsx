@@ -23,7 +23,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { ToggleTheme } from "./toogle-theme";
 import navbar from "@/public/navbar-img.jpg";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 interface RouteProps {
   href: string;
@@ -38,45 +43,32 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#services",
-    label: "Dịch vụ",
+    href: "/enroll",
+    label: "Đăng ký",
   },
   {
-    href: "#major",
-    label: "Ngành học",
+    href: "/event",
+    label: "Sự kiện",
   },
-
-  // {
-  //   href: "#team",
-  //   label: "Team",
-  // },
-  // {
-  //   href: "#contact",
-  //   label: "Contact",
-  // },
-  // {
-  //   href: "#faq",
-  //   label: "FAQ",
-  // },
 ];
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-    href: "#",
+    title: "Khóa học tiếng hàn ",
+    description: "Khóa học tiếng Hàn cơ bản dành cho người chưa có nền tảng.",
+    href: "/course",
   },
   {
-    title: "Build Trust",
+    title: "Đại học",
     description:
-      "Leverages social proof elements to establish trust and credibility.",
-    href: "#",
+      "Cách ngành hệ đại học.",
+    href: "/university",
   },
   {
-    title: "Capture Leads",
+    title: "Cao học",
     description:
-      "Make your lead capture form visually appealing and strategically.",
-    href: "#",
+      "Các ngành hệ cao học.",
+    href: "/master",
   },
 ];
 
@@ -104,30 +96,39 @@ export const Navbar = () => {
           </SheetTrigger>
 
           <SheetContent
-  side="left"
-  className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
->
-  <div>
-    <SheetHeader className="mb-4 ml-4">
-      <SheetTitle className="flex items-center">
-        <Link href="/" className="flex items-center">
-          <Image
-            alt=""
-            src={require("@/public/logo.png")}
-            className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center"
-          />
-          H3A EDUCATION
-        </Link>
-      </SheetTitle>
-    </SheetHeader>
+            side="left"
+            className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary"
+          >
+            <div>
+              <SheetHeader className="mb-4 ml-4">
+                <SheetTitle className="flex items-center">
+                  <Link href="/" className="flex items-center">
+                    <Image
+                      alt=""
+                      src={require("@/public/logo.png")}
+                      className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-11 h-9 mr-2 border text-white flex items-center justify-center"
+                    />
+                    H3A EDUCATION
+                  </Link>
+                </SheetTitle>
+              </SheetHeader>
 
-    <Accordion type="single" collapsible className="w-full">
+              <Accordion
+                type="multiple"
+                className="w-full"
+                forceMount
+                collapsible
+              >
                 <AccordionItem value="nganh-hoc">
-                  <AccordionTrigger className="font-semibold text-lg">Ngành học</AccordionTrigger>
+                  <AccordionTrigger className="font-medium text-lg">
+                    Ngành học
+                  </AccordionTrigger>
                   <AccordionContent>
                     <ul className="flex flex-col gap-2">
-                      {featureList.map(({ title, description }) => (
-                        <li
+                      {featureList.map(({ title, description, href }) => (
+                        <Link
+                        onClick={() => setIsOpen(false)}
+                          href={href}
                           key={title}
                           className="rounded-md p-3 text-sm hover:bg-muted"
                         >
@@ -137,7 +138,7 @@ export const Navbar = () => {
                           <p className="line-clamp-2 text-muted-foreground">
                             {description}
                           </p>
-                        </li>
+                        </Link>
                       ))}
                     </ul>
                   </AccordionContent>
@@ -157,14 +158,13 @@ export const Navbar = () => {
                   </Button>
                 ))}
               </div>
-  </div>
+            </div>
 
-  <SheetFooter className="flex-col sm:flex-col justify-start items-start">
-    <Separator className="mb-2" />
-    <ToggleTheme />
-  </SheetFooter>
-</SheetContent>
-
+            <SheetFooter className="flex-col sm:flex-col justify-start items-start">
+              <Separator className="mb-2" />
+              <ToggleTheme />
+            </SheetFooter>
+          </SheetContent>
         </Sheet>
       </div>
 
@@ -185,8 +185,9 @@ export const Navbar = () => {
                   height={600}
                 />
                 <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
+                  {featureList.map(({ title, description, href }) => (
+                    <Link
+                      href={href}
                       key={title}
                       className="rounded-md p-3 text-sm hover:bg-muted"
                     >
@@ -196,7 +197,7 @@ export const Navbar = () => {
                       <p className="line-clamp-2 text-muted-foreground">
                         {description}
                       </p>
-                    </li>
+                    </Link>
                   ))}
                 </ul>
               </div>
