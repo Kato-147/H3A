@@ -116,8 +116,6 @@ export const Navbar = () => {
               <Accordion
                 type="multiple"
                 className="w-full"
-                forceMount
-                collapsible
               >
                 <AccordionItem value="nganh-hoc">
                   <AccordionTrigger className="font-medium text-lg">
